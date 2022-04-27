@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="es">
+
+    <head>
+        <!-- Metadados -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+
+        <title>Orden de Servicio</title>
+    </head>
+
+    <body>  
+
+        <!-- título y subtítulo  -->
+        <div>
+            <h1 id="titulo">Orden de Servicio</h1>
+            <p id="subtitulo">Complete su informacion</p>
+            <br>
+        </div>
+
+        <!-- Início de formulário -->
+        <form action="" name="fvalida">
+          <input type="button" class="vuelve" value="Volver" onClick="history.go(-1);">
+            <fieldset class="grupo">
+                <!-- Campo do rut  -->
+                <div class="campo">
+                    <label for="nome"><strong>Rut</strong></label>
+                    <input type="number" name="rut" id="rut" required>
+                </div>
+
+                <!-- Campo digito verificador -->
+                <div class="campo">
+                    <label for="sobrenome"><strong>Digito Verificador</strong></label>
+                    <input type="text" name="digidv" id="digidv" required>
+                </div>
+            </fieldset> 
+
+            <fieldset class="grupo">
+                    <!-- Campo de nombre-->
+                <div class="campo">
+                    <label for="name"><strong>Nombre</strong></label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+
+                <div class="campo">
+                    <label for="lastname"><strong>Apellido</strong></label>
+                    <input type="text" name="lastname" id="lastname" required>
+                </div>
+            </fieldset> 
+
+            <!-- Campo de Dirección-->
+            <div class="campo">
+                <label for="dire"><strong>Dirección</strong></label>
+                <input type="text" name="dire" id="dire" required>
+            </div>
+
+            <fieldset class="grupo">
+            <!-- Campo Regiones -->
+
+                <div class="campo">
+                    <label class="form-label"><strong>Region</strong></label>
+                    <select id="regiones"  required></select>
+                </div>
+
+            <!-- Campo Comunas -->
+            <div class="campo">
+                    <label class="form-label"><strong>Comuna</strong></label>
+                    <select id="comunas"  required></select>
+                </div>
+            </fieldset> 
+
+
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label class="form-label"><strong>Vehiculos</strong></label>
+                    <select id="typecar" required>
+                        <option selected disabled value="">Selecione</option>
+                        <option>Furgon</option>
+                        <option>Automovil</option>
+                        <option>Camion</option>
+                        <option>Camioneta</option>
+                        
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label class="form-label"><strong>Marca</strong></label>
+                    <select id="typemarca" required>
+                        <option selected disabled value="">Selecione</option>
+                        <option>CHEVROLET</option>
+                        <option>HYUNDAI</option>
+                        <option>TOYOTA</option>
+                        <option>NISSAN</option>
+                        <option>SUZUKI</option>
+                        <option>KIA MOTORS</option>
+                        <option>PEUGEOT</option>
+                        <option>MAZDA</option>
+                        <option>FORD</option>
+                        <option>VOLKSWAGEN</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo">
+                <!-- Campo de Modelo -->
+                <div class="campo">
+                    <label for="modelo"><strong>Modelo</strong></label>
+                    <input type="text" name="modelo" id="modelo" required>
+                </div>
+
+                <div class="campo">
+                    <label class="form-label"><strong>Año</strong></label>
+                    <select id="typeano" required>
+                        <option selected disabled value="">Selecione</option>
+                        <option>2022</option>
+                        <option>2021</option>
+                        <option>2020</option>
+                        <option>2019</option>
+                        <option>2018</option>
+                        <option>2017</option>
+                        <option>2016</option>
+                        <option>2015</option>
+                        <option>2014</option>
+                        <option>2013</option>
+                        <option>2012</option>
+                        <option>2011</option>
+                        <option>2010</option>
+                        <option>2009</option>
+                        <option>2008</option>
+                        <option>2007</option>
+                        <option>2006</option>
+                        <option>2005</option>
+                        <option>2004</option>
+                        <option>2003</option>
+                        <option>2002</option>
+                        <option>2001</option>
+                        <option>2000</option>
+                        <option>1999</option>
+                        <option>1998</option>
+                        <option>1997</option>
+                        <option>1996</option>
+                        <option>1995</option>
+                        <option>1994</option>
+                        <option>1993</option>
+                        <option>1992</option>
+                        <option>1991</option>
+                        <option>1990</option>
+                        <option>1985</option>
+                        <option>1980</option>
+                        <option>1975</option>
+                        <option>1970</option>
+                        <option>1965</option>
+                        <option>1960</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <div class="campo">
+                <label for="senioridade"><strong>Revisión Técnica</strong></label>
+                <select id="typerevi" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Si</option>
+                  <option>No</option>
+                </select>
+            </div>
+
+
+            <fieldset class="grupo">
+                <!-- Campo de tecnologias para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+                <div id="check">
+                    <label>
+                        <img src="/assets/img/exterior.ico" alt="Lavado Exterior">
+                        
+                      </label>
+<!--            
+                    <input type="checkbox" id="tipo1" name="tecnologia1" value="HTML">
+-->
+                    <label for="tecnologia1"><strong> Lavado Exterior Interior $7000</strong></label>
+
+                    <br><label>
+                        <img src="/assets/img/motor.ico" alt="Lavado de Motor">
+                        
+                      </label>
+<!--
+                    <input type="checkbox" id="tipo2" name="tecnologia2" value="CSS">
+-->
+                    <label for="tecnologia2"><strong> Lavado de Motor $15000</strong></label>
+
+                </div>
+
+    
+            </fieldset>
+
+            <div class="campo">
+                <label for="senioridade"><strong>Tipo de Servicio</strong></label>
+                <select id="typetiposer" required>
+                  <option selected disabled value="">Selecione Servicio</option>
+                  <option value="si">Lavado Exterior Interior $7000</option>
+                  <option value="no">Lavado de Motor $15000</option>
+                  <option value="no">Ambos Servicios</option>
+                          </select>
+            </div>
+            <br>
+
+            <div class="campo">
+                <label for="senioridade"><strong>Encargado</strong></label>
+                <select id="typeenca" required>
+                  <option selected disabled value="">Selecione Encargado</option>
+                  <option>Encargado 1</option>
+                  <option>Encargado 2</option>
+                  <option>Encargado 3</option>
+                  <option>Encargado 4</option>
+                  <option>Lavalo tu!</option>
+                </select>
+            </div>
+            <br>
+
+            <fieldset class="grupo">
+                <label><strong> Fecha </strong></label>
+                <input type="date" id="fecha" requiered>
+                <label><strong> Hora </strong></label>
+                <input type="time" id="hora" requiered>
+ <!--               
+                <button class="boton" type="submit" onsubmit="">Concluído</button>   
+-->
+                <br>
+                <br>
+                <br>
+      
+            </fieldset>
+            <br><input type="button" value="Calcular" onclick="valida_envia()" </input>   
+<!--            <br><input type="button" value="Calcular"" </input> -->
+            <!-- Boton para enviar  formulário 
+            <button class="boton" type="submit" onsubmit="">Concluído</button>            
+-->
+        </form>
+
+          <!-- jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>  
+
+    </body>
+
+</html>
+
+
+
+
